@@ -1,10 +1,6 @@
 #' Plot expression rhythm comparison between two groups/genotypes
 #'
-#' Extracts ECHO/RAIN oscillation statistics and fitted/raw expression values
-#' for a given gene from two ECHO output data frames, plots replicate mean
-#' expression with error bars over time for each group, and overlays a
-#' spline-smoothed fitted curve for any group meeting joint significance
-#' thresholds.
+
 #'
 #' @param gene_name Character. Gene identifier to look up in `echo_df_1`/`echo_df_2`.
 #' @param echo_df_1,echo_df_2 Data frames of ECHO/RAIN output for group 1 and
@@ -26,21 +22,6 @@
 #' @param p_cutoff Numeric. Significance threshold applied to both RAIN and
 #'   ECHO p-values for drawing the fitted curve. Default `0.025`.
 #'
-#' @details
-#' For each group, `get_data()`:
-#' \itemize{
-#'   \item Locates the gene identifier, ECHO p-value, and RAIN p-value columns
-#'     by regex, erroring with an informative message if any is missing.
-#'   \item Locates the gene's row in the ECHO data frame; errors if more than
-#'     one row matches `gene_name` (ambiguous match), returns placeholder
-#'     values if zero rows match.
-#'   \item Validates that the number of `Original TP*` / `Fitted TP*` columns
-#'     matches the expected `length(timepoints) * num_reps` /
-#'     `length(timepoints)`, erroring otherwise.
-#'   \item Sorts `Original TP*` / `Fitted TP*` columns numerically by the
-#'     timepoint number embedded in their column name (not by column order in
-#'     the data frame), so raw/fitted values always align with `timepoints`.
-#' }
 #'
 #' A dashed spline-fitted curve is added for a group only if all of the
 #' following hold: RAIN p-value and ECHO p-value are both non-`NA` and below
