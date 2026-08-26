@@ -8,7 +8,7 @@ DOI: `xxxx.xxxx`
 Raw data can be downloaded from:
 ENA PRJEB122945
 
-For questions, please contact: pedro.ozorio@imba.oeaw.ac.at
+For questions, please contact: pedro.ozorio@imba.oeaw.ac.at / pedro.ozorio.brum@univie.ac.at
 
 ## Figure 2 — Immunofluorescence data
 
