@@ -1,10 +1,5 @@
 #' Plot a phase-ordered gene-expression heatmap
 #'
-#' Averages replicate expression values measured at the same timepoint,
-#' smooths each gene's temporal expression profile using a cubic smoothing
-#' spline, z-score scales each gene across time, and displays the result as a
-#' heatmap. Genes found in `df_results` are ordered by their reported phase
-#' (`Hours Shifted`). A second heatmap can optionally be displayed side by side.
 #'
 #' @param genes Character vector of gene names to include in the heatmap.
 #'   Genes are plotted in phase order when they are present in `df_results`;
@@ -50,21 +45,6 @@
 #' and, when an `` `Oscillation Type` `` column is present, the gene's
 #' oscillation type is one of `"Damped"`, `"Forced"`, or `"Harmonic"`.
 #'
-#' @details
-#' The function performs the following steps:
-#' \enumerate{
-#'   \item Restricts `df_results` to the requested genes and orders them by
-#'     `Hours Shifted`.
-#'   \item Retains genes found in the row names of the count matrix.
-#'   \item Averages replicate columns sharing the same timepoint.
-#'   \item Removes genes whose averaged expression profile contains missing
-#'     values.
-#'   \item Smooths each gene's temporal profile using
-#'     `smooth.spline(..., spar = 0.2)`.
-#'   \item Z-score scales each gene across timepoints.
-#'   \item Displays the scaled expression values using a fixed blue-white-red
-#'     colour scale ranging from -3 to 3.
-#' }
 #'
 #' When `df_counts2` is supplied, the second matrix is processed independently
 #' using the same requested gene order and displayed beside the first heatmap.
@@ -75,9 +55,6 @@
 #' @section Required packages:
 #' `pheatmap`, `grid`, and `gridExtra` (called via namespace, not attached).
 #'
-#' @note Genes absent from the count matrix, or genes removed because their
-#' averaged expression profile contains missing values, are not displayed.
-#' The number of genes shown is reported in each heatmap title.
 #'
 #' @examples
 #' \dontrun{
