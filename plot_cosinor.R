@@ -20,28 +20,7 @@
 #'   `ylim(0, y_max)`. Overrides the default `ylim(0, 1)` set when `scale = TRUE`.
 #'   Default `NULL`.
 #'
-#' @details
-#' Processing steps:
-#' \enumerate{
-#'   \item Filter `df` to `Group == group_name` and parse `Timepoint` into a
-#'     numeric `Time_h` column.
-#'   \item Average `Mean` within each `Replicate` x `Time_h` combination
-#'     (`df_rep_avg`).
-#'   \item Fit `Mean_val ~ cos(2*pi*Time_h/24) + sin(2*pi*Time_h/24) + (1 | Replicate)`
-#'     via `lme4::lmer`, compared against a random-intercept-only null model
-#'     using a likelihood ratio test (`anova`) to obtain `p_val`.
-#'   \item Derive amplitude (`sqrt(beta_cos^2 + beta_sin^2)`) and phase (in
-#'     hours, wrapped to `[0, 24)`) from the fixed-effect cosine/sine
-#'     coefficients.
-#'   \item Optionally min-max scale the replicate averages and the fitted
-#'     curve to `[0, 1]`.
-#'   \item Summarize replicate averages per `Time_h` (mean) for the colored
-#'     summary points.
-#'   \item Build the plot: gray individual replicate points, colored group
-#'     summary points, and (only if `p_val <= 0.05`) a dashed fitted curve
-#'     plus dotted vertical gridlines every 4 h.
-#'   \item Save the plot to `outfile` via `ggsave` (300 dpi, 9 x 5 in).
-#' }
+#'
 #'
 #' @return A `ggplot` object (invisibly also saved to `outfile` as a side effect).
 #'
