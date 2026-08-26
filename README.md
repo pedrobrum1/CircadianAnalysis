@@ -11,7 +11,7 @@ For questions, please contact: pedro.ozorio@imba.oeaw.ac.at
 
 **Script**
 
-- `plot_cosinor.R` — fits and plots mixed-effects 24 h cosinor models for immunofluorescence intensity data.
+- `plot_cosinor.R` — fits and plots 24 h cosinor models for immunofluorescence intensity data.
 
 **Input data**
 
@@ -22,7 +22,7 @@ For questions, please contact: pedro.ozorio@imba.oeaw.ac.at
 
 **Script**
 
-- `plot_echo.R` — performs the RNA-seq analysis and generates the associated Figure 2 plots.
+- `plot_rhythms.R` — plots results from rhythmicity analysis for bulk RNA-seq
 
 **Input data**
 
