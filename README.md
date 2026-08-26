@@ -6,26 +6,55 @@ This repository contains the code and processed data required to reproduce the a
 DOI: `xxxx.xxxx`
 
 Raw data can be downloaded from:
-ENA PRJEB122945
 
-For questions, please contact: pedro.ozorio@imba.oeaw.ac.at / pedro.ozorio.brum@univie.ac.at
+ENA accession: `PRJEB122945`
 
-## Figure 2 — Immunofluorescence data
+For questions, please contact:
 
-**Script**
+- pedro.ozorio@imba.oeaw.ac.at
+- pedro.ozorio.brum@univie.ac.at
 
-- `plot_cosinor.R` — fits and plots 24 h cosinor models for immunofluorescence intensity data.
+## Immunofluorescence data _in vitro_
 
-**Input data**
+### Script
+
+- `plot_cosinor.R` — fits and plots 24-hour cosinor models for immunofluorescence intensity data.
+
+### Input data
 
 - `BMAL1_if.rds`
 - `VENUS_if.rds`
 
-## Figure 2 — RNA-seq data
+## RNA-seq data
 
-**Script**
+### Input data
 
-- `plot_rhythms.R` — plots results from rhythmicity analysis for bulk RNA-seq
+The RNA-seq analyses were derived from the following processed objects:
 
-**Input data**
+#### Active cells
+
+- `active_sgz_wt_combined.rds`
+- `active_sgz_wt_filtered.rds`
+- `active_sgz_p2ko_combined.rds`
+- `active_sgz_p2ko_filtered.rds`
+- `active_svz_wt_combined.rds`
+- `active_svz_wt_filtered.rds`
+
+#### Quiescent cells
+
+- `quiescent_sgz_wt_combined.rds`
+- `quiescent_sgz_wt_filtered.rds`
+- `quiescent_sgz_p2ko_combined.rds`
+- `quiescent_sgz_p2ko_filtered.rds`
+- `quiescent_svz_wt_combined.rds`
+- `quiescent_svz_wt_filtered.rds`
+
+### Object names
+
+- `_combined` — rhythmicity-analysis results for all transcripts.
+- `_filtered` — results restricted to transcripts with `p < 0.025` in both RAIN and ECHO, and a frequency of less than 5% after applying `permutation_filtering.R`.
+
+### Scripts
+
+- `plot_rhythms.R` — plots results from the rhythmicity analysis of bulk RNA-seq data.
 
