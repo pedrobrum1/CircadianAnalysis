@@ -29,7 +29,7 @@ For questions, please contact:
 
 ### Input data
 
-The RNA-seq analyses were derived from the following processed objects:
+Rhythmicity analysis derived the following objects:
 
 #### Active cells
 
