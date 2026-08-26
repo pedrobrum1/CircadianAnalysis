@@ -1,15 +1,28 @@
-# CircadianAnalysis
+# Reproducibility files
 
-Reproducibility of the analysis performed for the manuscript:
+This repository contains the code and processed data required to reproduce the analyses and figures from:
 
-PER2- and state-dependent transcriptional programs gate neural stem cell proliferation with niche-specific circadian autonomy doi:xxxx.xxxx
+**PER2- and state-dependent transcriptional programs gate neural stem cell proliferation with niche-specific circadian autonomy**  
+DOI: `xxxx.xxxx`
 
-For more information, please contact pedro.ozorio@imba.oeaw.ac.at
+For questions, please contact: pedro.ozorio@imba.oeaw.ac.at
 
-Fig. 2 IF Data
-plot_cosinor.R
-BMAL1_if.rds
-VENUS_if.rds
+## Figure 2 — Immunofluorescence data
 
-Fig. 2 RNAseq data
-plot_echo.R
+**Script**
+
+- `plot_cosinor.R` — fits and plots mixed-effects 24 h cosinor models for immunofluorescence intensity data.
+
+**Input data**
+
+- `BMAL1_if.rds`
+- `VENUS_if.rds`
+
+## Figure 2 — RNA-seq data
+
+**Script**
+
+- `plot_echo.R` — performs the RNA-seq analysis and generates the associated Figure 2 plots.
+
+**Input data**
+
