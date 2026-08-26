@@ -55,6 +55,6 @@ Rhythmicity analysis derived the following objects:
 - `_filtered` — results restricted to transcripts with `p < 0.025` in both RAIN and ECHO, and a frequency of less than 5% after applying `permutation_filtering.R`.
 
 ### Scripts
-
+- `permutation_filtering.R` - permutation pipeline
 - `plot_rhythms.R` — plots results from the rhythmicity analysis of bulk RNA-seq data.
 
