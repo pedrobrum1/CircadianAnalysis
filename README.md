@@ -20,7 +20,7 @@ For questions, please contact:
 
 ### Script
 
-- `plot_cosinor.R` — fits and plots 24-hour cosinor models for immunofluorescence intensity data.
+- `plot_cosinor.R` — fits and plots 24-hour cosinor models for immunofluorescence intensity data (Fig. 2)
 
 ### Input data
 
