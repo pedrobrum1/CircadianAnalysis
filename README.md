@@ -23,7 +23,7 @@ For questions, please contact:
 - `plot_cosinor.R` — fits and plots 24-hour cosinor models for immunofluorescence intensity data (Fig. 2)
 
 ### Input data
-* Objects contain nuclear intensity values ($Mean, $IndDen, $RawIntDen) objtained through DAPI segmentation utilizing StarDist 2D ([Weigert et al., 2022]https://github.com/stardist/stardist-imagej).
+* Objects contain nuclear intensity values ($Mean, $IndDen, $RawIntDen) objtained through DAPI segmentation utilizing StarDist 2D ([Weigert et al., 2022](https://github.com/stardist/stardist-imagej)).
 * Includes $Group: SGZ_A, SGZ_Q, SVZ_A, SVZ_Q / $Replicate: BR1, BR2, BR3 / $File: original .vsi (images) and .csv (quantification) file names 
 
 - `BMAL1_if.rds`
@@ -54,7 +54,7 @@ Rhythmicity analysis derived the following objects:
 - `quiescent_svz_wt_filtered.rds`
 
 ### Object names
-* Objects contain RAIN ([Thaben et al., 2014](https://www.bioconductor.org/packages//3.18/bioc/html/rain.html)) and ECHO ([De los Santos et al., 2020], https://github.com/delosh653/ECHO) results, vst-normalized counts, and ECHO-fitted counts.
+* Objects contain RAIN ([Thaben et al., 2014](https://www.bioconductor.org/packages//3.18/bioc/html/rain.html)) and ECHO ([De los Santos et al., 2020](https://github.com/delosh653/ECHO)) results, vst-normalized counts, and ECHO-fitted counts.
 - `_combined` — rhythmicity-analysis results for all transcripts.
 - `_filtered` — results restricted to transcripts with `p < 0.025` in both RAIN and ECHO, and a frequency of less than 5% after applying `permutation_filtering.R`.
 
