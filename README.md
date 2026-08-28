@@ -52,7 +52,7 @@ Rhythmicity analysis derived the following objects:
 - `quiescent_svz_wt_filtered.rds`
 
 ### Object names
-
+* Objects contain RAIN (Thaben et al., 2014) and ECHO (De los Santos et al., 2020) results, vst-normalized counts, and ECHO-fitted counts.
 - `_combined` — rhythmicity-analysis results for all transcripts.
 - `_filtered` — results restricted to transcripts with `p < 0.025` in both RAIN and ECHO, and a frequency of less than 5% after applying `permutation_filtering.R`.
 
