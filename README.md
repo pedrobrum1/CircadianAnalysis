@@ -58,7 +58,7 @@ Rhythmicity analysis derived the following objects:
 
 ### Scripts
 - `permutation_filtering.R` - permutation pipeline
-- `plot_rhythms.R` — plots results from the rhythmicity analysis of bulk RNA-seq data.
-- `plot_phase_heatmap.R` - heatmap ordered by phase
-- `mfuzz_cluster_utils.R` - extracts centroids and plots clusters based on phase
+- `plot_rhythms.R` — plots results from the rhythmicity analysis of bulk RNA-seq data. (Fig. 2 and Supp. Fig 5 & 7)
+- `plot_phase_heatmap.R` - heatmap ordered by phase (Fig. 2)
+- `mfuzz_cluster_utils.R` - extracts centroids and plots clusters based on phase (Fig. 2)
 
