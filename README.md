@@ -23,7 +23,7 @@ For questions, please contact:
 - `plot_cosinor.R` — fits and plots 24-hour cosinor models for immunofluorescence intensity data (Fig. 2)
 
 ### Input data
-* Objects contain nuclear intensity values ($Mean, $IndDen, $RawIntDen) objtained through DAPI segmentation utilizing StarDist 2D ([Weigert et al., 2022](https://github.com/stardist/stardist-imagej)).
+* Objects contain nuclear intensity values ($Mean, $IndDen, $RawIntDen) objtained through DAPI segmentation utilizing StarDist 2D ([Schmidt et al., 2018](https://github.com/stardist/stardist-imagej)).
 * Includes $Group: SGZ_A, SGZ_Q, SVZ_A, SVZ_Q / $Replicate: BR1, BR2, BR3 / $File: original .vsi (images) and .csv (quantification) file names 
 
 - `BMAL1_if.rds`
