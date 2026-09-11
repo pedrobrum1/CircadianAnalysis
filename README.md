@@ -9,8 +9,11 @@ Raw sequencing data can be downloaded from:
 
 ENA accession: `PRJEB122945`
 
-Immunofluorescence datasets are available upon request.
+*Imaging datasets are available upon request.
 
+For further inquires, please contact:
+pedro.ozorio@imba.oeaw.ac.at
+pedro.ozorio.brum@univie.ac.at
 
 ## Immunofluorescence data _in vitro_
 
