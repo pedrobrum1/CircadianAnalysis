@@ -3,7 +3,7 @@
 This repository contains the code and processed data required to reproduce the analyses and figures from:
 
 **PER2- and state-dependent transcriptional programs gate neural stem cell proliferation with niche-specific circadian autonomy**  
-DOI: `xxxx.xxxx`
+DOI: `10.64898/2026.09.14.751519`
 
 Raw sequencing data can be downloaded from:
 
